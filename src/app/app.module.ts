@@ -19,6 +19,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -43,8 +45,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    MatDialogModule
-  ],
+    MatDialogModule,
+    MatDatepickerModule,
+    HttpClientModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
