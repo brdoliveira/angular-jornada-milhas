@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Promocao } from 'src/app/core/types/type';
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-busca',
@@ -9,5 +11,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card-busca.component.scss'
 })
 export class CardBuscaComponent {
-
+  @Input() promocao!: Promocao;
 }
