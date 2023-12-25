@@ -10,3 +10,8 @@ export interface UnidadeFederativa {
     nome: string;
     sigla: string;
 }
+
+export interface Depoimento {
+    texto: string
+    autor: string
+}
