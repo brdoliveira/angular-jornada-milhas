@@ -22,16 +22,32 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
+import { ContainerComponent } from './shared/container/container.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
+import { ModalComponent } from './shared/modal/modal.component';
+import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     BannerComponent,
     CardComponent,
-    FormBuscaComponent
+    ContainerComponent,
+    HomeComponent,
+    FooterComponent,
+    CardBuscaComponent,
+    CardDepoimentoComponent,
+    FormBuscaComponent,
+    ModalComponent,
+    DropdownUfComponent,
+    DepoimentosComponent
   ],
   imports: [
     BrowserModule,
@@ -45,11 +61,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatChipsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDatepickerModule,
     MatNativeDateModule,
     MatDialogModule,
-    MatDatepickerModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatAutocompleteModule
 ],
   providers: [],
   bootstrap: [AppComponent]
