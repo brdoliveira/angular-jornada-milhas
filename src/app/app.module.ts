@@ -30,6 +30,7 @@ import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 import { CardDepoimentoComponent } from './shared/card-depoimento/card-depoimento.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.component';
+import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
 
 
 
@@ -47,7 +48,8 @@ import { DepoimentosComponent } from './pages/home/depoimentos/depoimentos.compo
     FormBuscaComponent,
     ModalComponent,
     DropdownUfComponent,
-    DepoimentosComponent
+    DepoimentosComponent,
+    SeletorPassageiroComponent
   ],
   imports: [
     BrowserModule,
