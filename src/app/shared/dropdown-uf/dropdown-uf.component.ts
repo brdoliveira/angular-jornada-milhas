@@ -1,6 +1,6 @@
-import { UnidadeFederativa } from 'src/app/core/types/type';
-import { UnidadeFederativaService } from './../../../core/services/unidade-federativa.service';
 import { Component, Input, OnInit } from '@angular/core';
+import { UnidadeFederativaService } from './../../core/services/unidade-federativa.service';
+import { UnidadeFederativa } from 'src/app/core/types/type';
 import { Observable, map, startWith } from 'rxjs';
 import { FormControl } from '@angular/forms';
 
@@ -12,6 +12,7 @@ import { FormControl } from '@angular/forms';
 export class DropdownUfComponent implements OnInit{
   @Input() label: string = "";
   @Input() iconePrefixo: string = "";
+  @Input() placeholder: string = '';
   @Input() control!: FormControl;
 
 
