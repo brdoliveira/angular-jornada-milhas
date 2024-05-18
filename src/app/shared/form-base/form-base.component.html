@@ -110,7 +110,9 @@
           </mat-error>
         </mat-card-content>
         <mat-card-actions class="full-width">
-          <button (click)="executarAcao()" mat-flat-button
+          <button mat-flat-button
+            [class.perfil-button]="perfilComponent"
+            (click)="executarAcao()"
             [disabled]="cadastroForm.invalid"
             color="primary"
           >{{ textoBotao}}
