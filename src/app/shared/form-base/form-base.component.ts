@@ -11,7 +11,10 @@ import { FormValidations } from '../form-validations';
 })
 export class FormBaseComponent {
   @Input() perfilComponent!: boolean;
+  @Input() titulo: string = "Crie sua conta";
+  @Input() textoBotao: string = "CADASTRAR";
   @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>
+
 
   cadastroForm!: FormGroup;
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
