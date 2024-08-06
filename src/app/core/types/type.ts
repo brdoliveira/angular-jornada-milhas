@@ -14,7 +14,8 @@ export interface PessoaUsuaria {
     senha: string;
     cidade: string;
     estado: UnidadeFederativa;
-}  
+    genero: string;
+}
 
 export interface UnidadeFederativa {
     id: number;
@@ -23,6 +24,8 @@ export interface UnidadeFederativa {
 }
 
 export interface Depoimento {
-    texto: string
-    autor: string
+    id: number;
+    texto: string;
+    autor: string;
+    avatar: string;
 }
