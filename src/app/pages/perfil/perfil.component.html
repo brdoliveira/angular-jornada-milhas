@@ -4,8 +4,10 @@
 >
 </app-banner>
 <app-form-base
-  [titulo]="titulo"
+  [titulo]="titulo + nome"
   [textoBotao]="textoBotao"
-  [perfilComponent]="perfilComponent"
+  [perfilComponent]="true"
+  (sair)="deslogar()"
+  (acaoClique)="atualizar()"
 >
 </app-form-base>
