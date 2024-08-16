@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PassagensService } from 'src/app/core/services/passagens.service';
+import { Passagem } from 'src/app/core/types/type';
 
 @Component({
   selector: 'app-busca',
@@ -7,7 +8,7 @@ import { PassagensService } from 'src/app/core/services/passagens.service';
   styleUrls: ['./busca.component.scss']
 })
 export class BuscaComponent implements OnInit {
-  passagens: Passagens[] = []
+  passagens: Passagem[] = []
 
   constructor(private passagensService: PassagensService) { }
   ngOnInit(): void {
