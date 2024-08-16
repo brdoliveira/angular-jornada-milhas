@@ -13,7 +13,11 @@ export class FormBuscaComponent {
     public formBuscaService : FormBuscaService) {}
 
   buscar () {
-    const formBuscaValue = this.formBuscaService.formBusca.value
-    this.realizarBusca.emit(formBuscaValue);
+    if (this.formBuscaService.formEstaValido) {
+      const formBuscavalue = this.formBuscaService.formBusca.value;
+      this.realizarBusca.emit(formBuscavalue);
+    } else {
+      alert('O formulário precisa ser preenchido')
+    }
   }
 }
