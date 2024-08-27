@@ -19,12 +19,18 @@ import { PrecosComponent } from './form-busca/filtros-complementares/precos/prec
 import { LabelComponent } from './form-busca/filtros-complementares/label/label.component';
 import { FiltrosComplementaresComponent } from './form-busca/filtros-complementares/filtros-complementares.component';
 import { PassagemDestaqueComponent } from './passagem-destaque/passagem-destaque.component';
+import { CommonModule } from '@angular/common';
+import { MaterialModule } from '../core/material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
+    CommonModule,
+    MaterialModule,
+    ReactiveFormsModule,
     HeaderComponent,
     BannerComponent,
     CardComponent,
