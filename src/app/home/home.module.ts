@@ -5,6 +5,7 @@ import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from 'src/app/core/material/material.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 
@@ -18,6 +19,7 @@ imports:  [
     CommonModule,
     MaterialModule,
     SharedModule,
+    HomeRoutingModule
 ],
 exports: [
     HomeComponent,
