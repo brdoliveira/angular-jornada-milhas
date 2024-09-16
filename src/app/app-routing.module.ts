@@ -14,6 +14,11 @@ const routes: Routes = [
   {
     path: 'busca',
     loadChildren: () => import('./busca/busca.module').then(m => m.BuscaModule),
+  },
+  {
+    path: '**',
+    redirectTo: '/pagina-nao-encontrada',
+    pathMatch: 'full'
   }
 ];
 
